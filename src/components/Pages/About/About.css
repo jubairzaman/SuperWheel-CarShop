@@ -1,0 +1,10 @@
+h3{
+    color:#052046 ;
+}
+.aboutBody{
+    display: flex;
+    padding: 25px;
+    background-color: rgba(201, 201, 201, 0.329);
+    align-items: center;
+    justify-content: center;
+}

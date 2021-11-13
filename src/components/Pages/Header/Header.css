@@ -1,0 +1,11 @@
+.header {
+
+    height: 100vh;
+    background-image: url(https://images2.alphacoders.com/846/thumb-1920-84620.jpg);
+    background-size: cover;
+    background-position: center;
+    
+  }
+.text{
+  padding-top: 200px;
+}

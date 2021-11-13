@@ -1,0 +1,7 @@
+.order-form form input, textarea{
+    width: 50%;
+    margin-bottom: 10px;
+}
+.default-data{
+    display: none !important;
+}

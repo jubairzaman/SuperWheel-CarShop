@@ -1,0 +1,17 @@
+.bg-secondary{
+    background-color: wheat!important;
+}
+.nav-link{
+    color: rgb(255, 255, 255)!important;
+    font-weight: 600;
+}
+.nav-link:hover{
+    color: rgb(255, 64, 64)!important;
+    font-weight: 600;
+}
+.dashboard{
+    color:rgb(255, 0, 0) !important;
+}
+.dashboard:hover{
+    color:rgb(255, 255, 255) !important;
+}
