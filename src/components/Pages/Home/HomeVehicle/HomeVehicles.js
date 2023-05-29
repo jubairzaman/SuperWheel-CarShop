@@ -5,7 +5,7 @@ import HomeVehicle from "./HomeVehicle";
 const HomeVehicles = () => {
   const [vehicles, setVehicles] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/vehicles")
+    fetch("https://super-wheel-server.vercel.app/vehicles")
       .then((res) => res.json())
       .then((data) => setVehicles(data));
   }, []);

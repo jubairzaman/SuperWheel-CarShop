@@ -5,7 +5,7 @@ import ReviewCard from '../Review/ReviewCard';
 const Reviews = () => {
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://super-wheel-server.vercel.app/reviews')
             .then(res => res.json())
             .then(data => setReviews(data))
     }, []);

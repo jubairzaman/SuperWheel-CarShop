@@ -5,7 +5,7 @@ import Dashboard from "../dashboard/Dashboard";
 const AddProduct = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/vehicles", data).then((res) => {
+    axios.post("https://super-wheel-server.vercel.app/vehicles", data).then((res) => {
       if (res.data.insertedId) {
         alert("Review added successfully");
         reset();

@@ -12,12 +12,12 @@ const Order = () => {
   const { register, handleSubmit, reset } = useForm();
   const { _id, name, price, img } = vehicle;
   useEffect(() => {
-    fetch(`http://localhost:5000/vehicles/${vehicleId}`)
+    fetch(`https://super-wheel-server.vercel.app/vehicles/${vehicleId}`)
       .then((res) => res.json())
       .then((data) => setVehicle(data));
   }, []);
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/order", data).then((res) => {
+    axios.post("https://super-wheel-server.vercel.app/order", data).then((res) => {
       if (res.data.insertedId) {
         alert("added successfully");
         reset();

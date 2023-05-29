@@ -5,7 +5,7 @@ import VehicleCard from "../Vehicle/VehicleCard";
 const Vehicles = () => {
   const [vehicles, setVehicles] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/vehicles")
+    fetch("https://super-wheel-server.vercel.app/vehicles")
       .then((res) => res.json())
       .then((data) => setVehicles(data));
   }, []);

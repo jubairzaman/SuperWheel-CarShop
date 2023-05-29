@@ -6,13 +6,13 @@ import './style.css'
 const ManageProducts = () => {
   const [vehicles, setVehicles] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/vehicles")
+    fetch("https://super-wheel-server.vercel.app/vehicles")
       .then((res) => res.json())
       .then((data) => setVehicles(data));
   }, []);
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:5000/order/${id}`)
+      .delete(`https://super-wheel-server.vercel.app/order/${id}`)
       .then((res) => {
         console.log(res);
         if (res.data.deletedCount === 1) {

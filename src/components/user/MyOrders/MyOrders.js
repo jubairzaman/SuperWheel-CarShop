@@ -5,14 +5,14 @@ import axios from "axios";
 const MyOrders = () => {
   const [orders, setOrders] = useState([]);
   useEffect(() => {
-      fetch("http://localhost:5000/order")
+      fetch("https://super-wheel-server.vercel.app/order")
       .then(res => res.json())
       .then(data => setOrders(data))
   }, []);
 
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:5000/order/${id}`)
+      .delete(`https://super-wheel-server.vercel.app/order/${id}`)
       .then((res) => {
         console.log(res);
         if (res.data.deletedCount === 1) {

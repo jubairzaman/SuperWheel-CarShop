@@ -7,7 +7,7 @@ const VehicleDetail = () => {
   const [vehicle, setVehicle] = useState({});
   const { _id, name, price, description, img } = vehicle;
   useEffect(() => {
-    fetch(`http://localhost:5000/vehicles/${vehicleId}`)
+    fetch(`https://super-wheel-server.vercel.app/vehicles/${vehicleId}`)
       .then((res) => res.json())
       .then((data) => setVehicle(data));
   }, []);
